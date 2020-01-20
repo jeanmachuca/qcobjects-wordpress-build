@@ -1,6 +1,6 @@
 {
   "devmode":"debug",
-  "documentRoot":"/Users/jeanmachuca/Documents/AptanaStudio3WP/qcobjects-demos/demo-php/wordpress/",
+  "documentRoot":"wordpress/",
   "documentRootFileIndex":"index.php",
   "backend":{
     "routes":[
