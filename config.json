@@ -1,0 +1,17 @@
+{
+  "devmode":"debug",
+  "documentRoot":"/Users/jeanmachuca/Documents/AptanaStudio3WP/qcobjects-demos/demo-php/wordpress/",
+  "documentRootFileIndex":"index.php",
+  "backend":{
+    "routes":[
+      {
+        "name":"PHPWithoutExtension",
+        "description":"PHP For Any Path Without Extension except for images and text files",
+        "path":"^/(?!.*.jpg|.*.ico|.*.png|.*.css|.*.txt|.*.rss|.*.html).*$",
+        "microservice":"org.quickcorp.backend.php",
+        "redirect_to":"index.php"
+      }
+    ]
+  }
+
+}
