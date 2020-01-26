@@ -1,9 +1,15 @@
 {
   "devmode":"debug",
-  "documentRoot":"wordpress/",
+  "documentRoot":"path1/",
   "documentRootFileIndex":"index.php",
   "backend":{
     "routes":[
+      {
+        "name":"PHPExtension",
+        "description":"PHP For Any Path Extension .php",
+        "path":"^/.*.php$",
+        "microservice":"org.quickcorp.backend.php",
+      },
       {
         "name":"PHPWithoutExtension",
         "description":"PHP For Any Path Without Extension except for images and text files",
