@@ -1,21 +1,21 @@
 {
   "devmode":"debug",
-  "documentRoot":"path1/",
+  "documentRoot":"wordpress/",
   "documentRootFileIndex":"index.php",
   "backend":{
     "routes":[
       {
+        "name":"PHPWithoutExtension",
+        "description":"PHP For Any Path Without Extension except for images and text files",
+        "path":"^/(?!.*.jpg|.*.ico|.*.png|.*.css|.*.txt|.*.rss|.*.html|.*.php).*$",
+        "microservice":"org.quickcorp.backend.php",
+        "redirect_to":"index.php"
+      },
+      {
         "name":"PHPExtension",
         "description":"PHP For Any Path Extension .php",
         "path":"^/.*.php$",
-        "microservice":"org.quickcorp.backend.php",
-      },
-      {
-        "name":"PHPWithoutExtension",
-        "description":"PHP For Any Path Without Extension except for images and text files",
-        "path":"^/(?!.*.jpg|.*.ico|.*.png|.*.css|.*.txt|.*.rss|.*.html).*$",
-        "microservice":"org.quickcorp.backend.php",
-        "redirect_to":"index.php"
+        "microservice":"org.quickcorp.backend.php"
       }
     ]
   }
